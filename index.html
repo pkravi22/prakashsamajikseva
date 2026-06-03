@@ -127,13 +127,30 @@
       margin-bottom: 36px;
       letter-spacing: 0.5px;
     }
-    .hero-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 16px;
-      max-width: 900px;
-      margin: 0 auto 40px;
-    }
+   .hero-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0 15px;
+  }
+}
     .hero-card {
       background: rgba(255,255,255,0.12);
       border: 1px solid rgba(255,255,255,0.2);
@@ -537,7 +554,7 @@
   <div class="nav-inner">
     <div class="nav-logo">
       प्रकाश सामाजिक सेवा संस्थान
-      <span>Prakash Samajik Seva Sansthan</span>
+      <span>Registered NGO — UP/2024/0448567</span>
     </div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About Us</a></li>
@@ -558,9 +575,9 @@
 
 <!-- ── HERO ── -->
 <section class="hero" id="home">
-  <div class="hero-badge">🏛️ Registered NGO — UP/2024/0448567</div>
-  <h1>प्रकाश सामाजिक सेवा संस्थान</h1>
-  <p class="hero-tagline">"हर कदम शिक्षा की ओर, आपका छोटा सा प्रयास किसी के जीवन का नया अध्याय"</p>
+
+  <h2>प्रकाश सामाजिक सेवा संस्थान</h2>
+  <h4>"हर कदम शिक्षा की ओर, आपका छोटा सा प्रयास किसी के जीवन का नया अध्याय"</h4>
   <div class="hero-ngo-id">Unique Id of VO/NGO — UP/2024/0448567</div>
 
   <div class="hero-cards">
